@@ -1,83 +1,50 @@
-> [See in spanish/Ver en español](https://github.com/LuisMiSanVe/template-repos/blob/main/README.es.md)
-# 😀 Repository's Title
-[![image](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)](https://dotnet.microsoft.com/en-us/languages/csharp)
-[![image](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet)
-[![image](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![image](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)](https://www.newtonsoft.com/json)
-[![image](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white)](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
-[![image](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://aistudio.google.com/app/apikey)
-[![image](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)](https://visualstudio.microsoft.com/)
-[![image](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)](https://jwt.io/introduction)
-[![image](https://img.shields.io/badge/apache%20netbeans-1B6AC6?style=for-the-badge&logo=apache%20netbeans%20IDE&logoColor=white)](https://netbeans.apache.org/front/main/index.html)
-[![image](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
-[![image](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
-[![image](https://img.shields.io/badge/Xampp-F37623?style=for-the-badge&logo=xampp&logoColor=white)](https://www.apachefriends.org/es/index.html)
-[![image](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=Apache&logoColor=white)](https://httpd.apache.org/)
-[![image](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+> [See in spanish/Ver en español](https://github.com/LuisMiSanVe/GeminiCursorHelper/blob/main/README.es.md)
+# 🖱️ Gemini Cursor Helper
 [![image](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/)
-[![image](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)]()
-[![image](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
-[![image](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)](https://console.firebase.google.com/)
-[![image](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)](https://developer.android.com/studio)
-[![image](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/studio)
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)](https://pytorch.org/)
-[![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
-[![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![image](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://aistudio.google.com/app/apikey)
 
->[!NOTE]
-> NOTE
-
-> [!WARNING]
-> WARNING
-
-> ANNOTATION
-
-BRIEF DESCRIPTION
-
-<img src="https://github.com/LuisMiSanVe/LuisMiSanVe/blob/main/Resources/ShopManager/image.png" width="50" alt="Image Alt">
-
-```
-CODE
-```
+AI Assistant that helps you localize and open programs using text input or voice.
 
 ## 📝 Technology Explanation
-Explanation
+The program makes a screenshot of your current screen and sends it to Gemini with a [prompt](https://github.com/LuisMiSanVe/GeminiCursorHelper/blob/main/GeminiCursorHelper.py#L78) for it to identify the location of your request and (if checked) try to open it.
+
+It is recommended to use the program with a plain background, where the program icons can be seen easily.
+
+Currently, it uses `Gemini Flash 2.5`, the most recent and advanced version of the model, even so, it will often make mistakes, hopefully it gets sharper in newer versions.
+
+> [!IMPORTANT]
+> Be aware that Gemini AI doesn't actually know the programs installed in your device and can make mistakes, so enable the *checkbox* to let Gemini try to open only if you make sure nothing unexpected can happen.
 
 ## 📋 Prerequisites
-Prerequisites
+You'll need two things to use this program: Gemini API KEY and the required Python libraries installed.
 
-## 🛠️ Setup
-Setup
+Obtain your Gemini API Key by visiting [Google AI Studio](https://aistudio.google.com/app/apikey). Ensure you are logged into your Google account, then press the blue button that says 'Create API key' and follow the steps to set up your Google Cloud Project and retrieve your API key. **Make sure to save it in a safe place**.  
+Google allows free use of this API without adding billing information, but there are some limitations.
 
-## ⚙️ Project Usage Explanation
-Usage
+In Google AI Studio, you can monitor the AI's usage by clicking 'View usage data' in the 'Plan' column where your projects are displayed. I recommend monitoring the 'Quota and system limits' tab and sorting by 'actual usage percentage,' as it provides further more detailed information.
 
-## 📖 About the Project
-About
-
-## 📂 Files
-Files
-
-## 🎨 Customization Options
-Options
-
-## 🚀 Releases
-The version will be released using these versioning policies:\
-New major features and critical bug fixes will cause the immediate release of a new version, while other minor changes or fixes will wait one week since the time the change is introduced in the repository before being included in the new version, so that other potential changes can be added.
->[!NOTE]
->These potencial new changes will not increase the wait time for the new version beyond one week.
-
-The version number will follow this format: \
-\[Major Feature\].\[Minor Feature\].\[Bug Fixes\]
+Then, download or clone the Python script and run this command on the same folder:
+```
+python pip install pystray pillow speechrecognition google-generativeai pyaudio pyautogui
+```
+Or if it fails or you have a different Python version:
+```
+py -m pip install pystray pillow speechrecognition google-generativeai pyaudio pyautogui
+```
 
 ## 💻 Technologies Used
-- Programming Language: [C#](https://dotnet.microsoft.com/en-us/languages/csharp) [Java](https://www.java.com/) [PHP](https://www.php.net/) [Python](https://www.python.org/)
-- Tested OS: [Ubuntu](https://ubuntu.com/)
-- Framework: [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) (Project built with [.Net](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet) Framework)
-- Template: Empty Views Activity
-- Android API:
+- Programming Language: [Python](https://www.python.org/)
 - Libraries:
-- NuGet Packages:
+  - [tkinter](https://docs.python.org/es/3.13/library/tkinter.html)
+  - [pystray](https://pypi.org/project/pystray/)
+  - [PIL](https://pypi.org/project/pillow/)
+  - [io](https://docs.python.org/3/library/io.html)
+  - [threading](https://docs.python.org/3/library/threading.html)
+  - [speech_recognition](https://pypi.org/project/SpeechRecognition/)
+  - [google.generativeai](https://pypi.org/project/google-generativeai/)
+  - [pyautogui](https://pyautogui.readthedocs.io/en/latest/)
+  - [re](https://docs.python.org/es/3.13/library/re.html)
 - Other:
-- Recommended IDE: [Visual Studio](https://visualstudio.microsoft.com/) [NetBeans](https://netbeans.apache.org/front/main/index.html) [VS Code](https://code.visualstudio.com/) [Gedit](https://help.gnome.org/users/gedit/stable/gedit-quickstart.html.en) [Android Studio](https://developer.android.com/studio)
+  - [Gemini API Key](https://aistudio.google.com/app/apikey)
+- Recommended IDE: [VS Code](https://code.visualstudio.com/)
